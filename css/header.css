@@ -1,0 +1,28 @@
+header {
+  height: 120px;
+  background-color: #fe5e41;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > * {
+  margin: 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header input {
+  padding: 0.3rem 0.5rem;
+  padding-top: 0.7rem;
+}
+
+header button {
+  background: none;
+  border: none;
+  color: white;
+}
