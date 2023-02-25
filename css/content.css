@@ -8,7 +8,6 @@
   width: 140px;
   font-weight: 600;
   font-size: 16px;
-  line-height: 48px;
 }
 
 .card {
@@ -34,7 +33,7 @@ main h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 36px;
+  line-height: var(--h1-line-height);
 }
 
 section p,
@@ -42,13 +41,18 @@ section h2 {
   margin: var(--content-spaceing);
 }
 
-section a {
-  font-weight: 600;
-  margin-left: var(--content-spaceing);
+section h2 {
+  line-height: var(--h2-line-height);
 }
 
 section p {
+  line-height: var(--p-line-height);
   max-width: 488px;
+}
+
+section a {
+  font-weight: 600;
+  margin-left: var(--content-spaceing);
 }
 
 .product-wrapper,
@@ -82,6 +86,7 @@ section p {
 }
 
 .product-header {
+  position: relative;
   display: flex;
   align-items: baseline;
   justify-content: space-between;

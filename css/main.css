@@ -20,6 +20,9 @@
   --color-darkest-grey: #1e1e1e;
   --color-orange: #fe5e41;
   --color-green: #00a878;
+  --h1-line-height: 48px;
+  --h2-line-height: 36px;
+  --p-line-height: 24px;
   --content-spaceing: 24px;
 }
 
@@ -293,7 +296,6 @@ img {
 button {
   font-size: 20px;
   text-align: center;
-  line-height: 0.7rem;
   background: none;
   border: none;
   cursor: pointer;
