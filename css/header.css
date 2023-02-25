@@ -1,16 +1,14 @@
 /* Header */
 
 header {
+  position: relative;
   height: 78px;
+  padding: 0 var(--content-spaceing);
   background-color: #fe5e41;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-header > * {
-  margin: 0.4rem;
 }
 
 header h2 {
@@ -28,7 +26,30 @@ header input {
 }
 
 header button {
+  position: relative;
   color: white;
+}
+
+.header-buttons button:last-child:after {
+  content: "1";
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  background-color: var(--color-green);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 26px;
+  left: 73px;
+  font-size: 28px;
 }
 
 #open-nav {
