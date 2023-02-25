@@ -24,11 +24,15 @@
 }
 
 html {
+  background-color: black;
   color: #222;
   box-sizing: border-box;
 }
 
 body {
+  background-color: white;
+  max-width: 1440px;
+  min-width: 375px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
