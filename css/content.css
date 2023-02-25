@@ -1,39 +1,16 @@
-main,
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form select,
-form button {
-  max-width: 200px;
-}
-
 .tg {
   border-collapse: collapse;
-  border-spacing: 0;
 }
 .tg td {
-  font-family: Arial, sans-serif;
   font-size: 14px;
   overflow: hidden;
-  padding: 10px 5px;
-  word-break: normal;
 }
 .tg th {
-  color: #fe5e41;
-  font-family: Arial, sans-serif;
+  color: var(--color-orange);
   font-size: 14px;
-  font-weight: normal;
   overflow: hidden;
-  padding: 10px 5px;
-  word-break: normal;
 }
 .tg .tg-0lax {
   text-align: left;
   vertical-align: top;
-}
-
-img {
-  max-width: 400px;
 }
