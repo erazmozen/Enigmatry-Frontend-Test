@@ -21,6 +21,48 @@
   z-index: 1000;
 }
 
+/* Selects */
+
+.select-wrapper {
+  margin-bottom: 20px;
+}
+
+.select-group {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 56px;
+  justify-items: center;
+  background: #fff;
+  font-size: 12px;
+  padding-right: 1px;
+  box-sizing: border-box;
+  padding-right: 34px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
+  margin: 24px 0;
+}
+
+.select-group > select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  border: 0 none;
+  margin: 0;
+  padding: 16px 20px 4px 20px;
+  outline: none;
+  background: transparent;
+  display: block;
+  font-size: 1.3em;
+  line-height: 18px;
+  height: 100%;
+}
+
+.select-group > label {
+  padding: 0px 20px 4px 20px;
+}
+
 /* Table */
 
 .tg {
