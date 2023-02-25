@@ -96,6 +96,22 @@ main h1 {
   padding: 0px 20px 4px 20px;
 }
 
+/* Checkbox */
+.checkbox-wrapper {
+  margin-bottom: 20px;
+}
+
+.checkbox-group input {
+  width: 18px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.checkbox-group label {
+  vertical-align: middle;
+}
+
 /* Table */
 
 .tg {
