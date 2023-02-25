@@ -11,6 +11,17 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+:root {
+  --color-white: #ffffff;
+  --color-semi-black: #1e1e1e;
+  --color-light-grey: #f2f2f2;
+  --color-medium-grey: #dedede;
+  --color-dark-grey: #bdbdbd;
+  --color-darkest-grey: #1e1e1e;
+  --color-orange: #fe5e41;
+  --color-green: #00a878;
+}
+
 html {
   color: #222;
   font-size: 16px;
@@ -260,4 +271,8 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+}
+
+img {
+  max-width: 100%;
 }
