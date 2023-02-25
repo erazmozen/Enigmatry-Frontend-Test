@@ -1,7 +1,7 @@
 /* Header */
 
 header {
-  height: 120px;
+  height: 78px;
   background-color: #fe5e41;
   color: white;
   display: flex;
@@ -10,7 +10,11 @@ header {
 }
 
 header > * {
-  margin: 1rem;
+  margin: 0.4rem;
+}
+
+header h2 {
+  margin: 0;
 }
 
 header a {
@@ -21,10 +25,23 @@ header a {
 header input {
   padding: 0.3rem 0.5rem;
   padding-top: 0.7rem;
+  border: none;
 }
 
 header button {
-  background: none;
-  border: none;
   color: white;
+}
+
+#open-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  #open-nav {
+    display: block;
+  }
 }
