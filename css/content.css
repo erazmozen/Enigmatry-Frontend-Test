@@ -195,24 +195,33 @@ img[alt="img2"] {
 
 /* Product Specifications */
 
-/* #product-specifications { */
-/*   background-color: var(--color-light-grey); */
-/*   margin-top: var(--content-spaceing); */
-/* } */
+#product-specifications {
+  background-color: var(--color-light-grey);
+  padding-bottom: 2rem;
+}
 
 /* Table */
 
 .tg {
+  margin: 0 var(--content-spaceing);
+  width: 100%;
   border-collapse: collapse;
 }
 .tg td {
   font-size: 14px;
   overflow: hidden;
+  white-space: nowrap;
+  padding: 0.2rem;
+}
+tr:nth-child(even) {
+  background: var(--color-light-grey);
 }
 .tg th {
   color: var(--color-orange);
   font-size: 14px;
   overflow: hidden;
+  white-space: nowrap;
+  padding: 0.2rem;
 }
 .tg .tg-0lax {
   text-align: left;
