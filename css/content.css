@@ -11,12 +11,31 @@
   line-height: 48px;
 }
 
+.card {
+  margin: var(--content-spaceing);
+  padding: var(--content-spaceing);
+  background-color: var(--color-light-grey);
+}
+
 /* Product section */
+
+main > p {
+  margin: var(--content-spaceing);
+}
+
+main h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}
 
 .product-header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  margin: var(--content-spaceing);
 }
 
 .product-body {
@@ -67,12 +86,13 @@
   outline: none;
   background: transparent;
   display: block;
-  font-size: 1.3em;
+  font-size: 14px;
   line-height: 18px;
   height: 100%;
 }
 
 .select-group > label {
+  font-size: 11px;
   padding: 0px 20px 4px 20px;
 }
 
