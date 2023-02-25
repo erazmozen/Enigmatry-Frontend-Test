@@ -107,6 +107,14 @@ section p {
   z-index: 1000;
 }
 
+.product-buttons > button {
+  margin: 0 15px;
+  height: 48px;
+  width: 48px;
+  background-color: var(--color-light-grey);
+  border-radius: 50%;
+}
+
 /* Selects */
 
 .select-wrapper {
