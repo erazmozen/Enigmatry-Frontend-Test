@@ -17,11 +17,16 @@
   background-color: var(--color-light-grey);
 }
 
-/* Product section */
-
-main > p {
-  margin: var(--content-spaceing);
+.card p {
+  margin: 0;
+  margin-bottom: var(--content-spaceing);
 }
+
+.card strong:last-child {
+  color: var(--color-orange);
+}
+
+/* Product section */
 
 main h1 {
   font-family: "Poppins";
@@ -29,6 +34,16 @@ main h1 {
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
+}
+
+section p,
+section h2 {
+  margin: var(--content-spaceing);
+}
+
+section a {
+  font-weight: 600;
+  margin-left: var(--content-spaceing);
 }
 
 .product-header {
@@ -127,6 +142,19 @@ main h1 {
 .color-button-alt {
   color: var(--color-orange);
 }
+
+/* Product Description */
+
+#product-description button {
+  margin-left: var(--content-spaceing);
+}
+
+/* Product Specifications */
+
+/* #product-specifications { */
+/*   background-color: var(--color-light-grey); */
+/*   margin-top: var(--content-spaceing); */
+/* } */
 
 /* Table */
 
