@@ -203,7 +203,10 @@ section a {
 }
 
 img[alt="img2"] {
+  object-fit: cover;
+  object-position: 0px -100px;
   max-width: 592px;
+  height: 444px;
 }
 
 /* Product Specifications */
