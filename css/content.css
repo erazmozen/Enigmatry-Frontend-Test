@@ -51,6 +51,36 @@ section p {
   max-width: 488px;
 }
 
+.product-wrapper,
+.description {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.description > img {
+  order: 2;
+}
+
+.description > div {
+  order: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .description {
+    justify-content: center;
+  }
+
+  .description > img {
+    order: 1;
+  }
+
+  .description > div {
+    order: 2;
+  }
+}
+
 .product-header {
   display: flex;
   align-items: baseline;
