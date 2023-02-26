@@ -88,22 +88,29 @@
 
   <body>
     <header>
-      <div class="logo"><h2>LOGO</h2></div>
-      <button type="button" id="open-nav">
-        <i title="Open menu" class="fas fa-bars"></i>
-      </button>
-      <nav>
-        <div class="nav-links">
-          <a href="#">Products</a>
-          <a href="#">Services</a>
-          <a href="#">About us</a>
-          <a href="#">Contact</a>
-        </div>
-        <div class="nav-input">
-          <input type="text" name="search" value="Search" />
-          <i title="Search" class="fas fa-search"></i>
-        </div>
-      </nav>
+      <div class="header-left">
+        <button type="button" id="open-nav">
+          <i title="Open menu" class="fas fa-bars"></i>
+        </button>
+        <div class="logo"><h2>LOGO</h2></div>
+        <nav>
+          <div class="nav-links">
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="nav-input">
+            <input
+              type="text"
+              name="search"
+              value="Search"
+            />
+            <i title="Search" class="fas fa-search"></i>
+          </div>
+        </nav>
+      </div>
+
       <div class="header-buttons">
         <button type="button">
           <i
@@ -217,7 +224,7 @@
           </div>
           <img
             src="https://s3-alpha-sig.figma.com/img/db21/4bc4/e1b0983b93c4e6a59b3d932f456842a9?Expires=1678060800&Signature=HEwcf1AdiaQYxq9Yv28RG22V5LETWyH6PpwJyid8arA5B4VPVb7Us4iOgE2bRMU1jCOrd~GRuuFGw6M3Wx12IyyNkKsFhM~WdlsHgeVmx-0Hhj-Sra7SJSmYo8ffyiofpY2XdoRva8rpTa4cY2XEtNVGIiGpU4FO3eiYZTQVcCqObM711wbXDuixGBw8ZKJSQQFHj2lWT~X9bQnru9bI0oWbd-202T8GcxkvMlrh~eV-GcLM9DrbqvMxa9Bf~r0HMbS8-~7xf844nNUj8ELKODsU3bkJCamI95UyA1tu4u2HQMpj8okkypc0nUkp9i1hE~tUd3CXe7WUS6IPFKA70g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt="img"
+            alt="Product preview"
           />
         </div>
 
@@ -351,12 +358,15 @@
             ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in
             reprehenderit in volu ptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.
-            Sed ut perspiciatis unde omnis iste natus error
-            sit voluptatem accusantium doloremque
-            laudantium.
+            dolore eu fugiat nulla pariatur.
+          </p>
+          <br />
+          <p>
+            Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim
+            id est laborum. Sed ut perspiciatis unde omnis
+            iste natus error sit voluptatem accusantium
+            doloremque laudantium.
           </p>
           <button
             type="button"
@@ -365,10 +375,12 @@
             More info
           </button>
         </div>
-        <img
-          src="https://s3-alpha-sig.figma.com/img/20ec/da31/8d62353fe3ffa1565dd5243c57cbb968?Expires=1678060800&Signature=gkLn4jQxzL5bhbsOaFi30DELZ7FaplCQlEVw~98smd39WGJoewyy3NpCkS6uvrt9NptTui4NbZrwRNCvalYIXIZFExrJESG9KFLMynFA~6qjWw~rSmPRtVxItJ1pyPrYc9aywgBRq20aD-1vMaFSuKdrf8oiWPQse81ZvUtfgwb-RfO84HPR8cHECkS1Y5FnvEAGzw9AitiFqq9sqSX9M0ziMJnGu-UCby-8y5j6GtRJnxcOik6QKNiKIUOFe0Wu-np4oHq8lolz3HQOT-JUqqu~33xf~foKVVETMkuOLeSBbLtXOEY86DchN5Ui4cod8YkwPtPjcvAAV6icu0x4Ug__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-          alt="img2"
-        />
+        <div class="description-image-wrapper">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/20ec/da31/8d62353fe3ffa1565dd5243c57cbb968?Expires=1678060800&Signature=gkLn4jQxzL5bhbsOaFi30DELZ7FaplCQlEVw~98smd39WGJoewyy3NpCkS6uvrt9NptTui4NbZrwRNCvalYIXIZFExrJESG9KFLMynFA~6qjWw~rSmPRtVxItJ1pyPrYc9aywgBRq20aD-1vMaFSuKdrf8oiWPQse81ZvUtfgwb-RfO84HPR8cHECkS1Y5FnvEAGzw9AitiFqq9sqSX9M0ziMJnGu-UCby-8y5j6GtRJnxcOik6QKNiKIUOFe0Wu-np4oHq8lolz3HQOT-JUqqu~33xf~foKVVETMkuOLeSBbLtXOEY86DchN5Ui4cod8YkwPtPjcvAAV6icu0x4Ug__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt="Product in use"
+          />
+        </div>
       </section>
 
       <section id="product-specifications">
