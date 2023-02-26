@@ -1,8 +1,7 @@
 /* Common classes */
 
 .card {
-  max-width: 488px;
-  margin: var(--content-spaceing);
+  max-width: 464px;
   padding: var(--content-spaceing);
   background-color: var(--color-light-grey);
 }
@@ -107,14 +106,21 @@ section a {
 /* Product section */
 
 #product-wrapper {
-  width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  flex-grow: 0;
+  margin: 0 var(--content-spaceing);
+}
+
+@media only screen and (min-width: 1400px) {
+  #product-wrapper {
+    margin: 0 var(--content-spaceing-desktop);
+  }
 }
 
 .product-slider {
   position: relative;
-  width: 100%;
 }
 
 .product-slider {
@@ -201,12 +207,31 @@ section a {
   vertical-align: middle;
 }
 
+/* Product description links */
+
+#product-description-links {
+  margin: 0 var(--content-spaceing);
+}
+
+@media only screen and (min-width: 1400px) {
+  #product-description-links {
+    margin: 0 var(--content-spaceing-desktop);
+  }
+}
+
 /* Product Description */
 
 #product-description {
-  width: 100%;
+  margin: 0 var(--content-spaceing);
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1400px) {
+  #product-description {
+    margin: 0 var(--content-spaceing-desktop);
+  }
 }
 
 #product-description > img {
@@ -228,6 +253,7 @@ section a {
     order: 2;
   }
 }
+
 #product-description button {
   margin-left: var(--content-spaceing);
 }
@@ -243,7 +269,7 @@ img[alt="img2"] {
 
 #product-specifications {
   background-color: var(--color-light-grey);
-  margin: 0 var(--content-spaceing);
+  padding: 0 var(--content-spaceing);
 }
 
 @media only screen and (min-width: 1400px) {
@@ -255,7 +281,6 @@ img[alt="img2"] {
 /* Table */
 
 .tg {
-  width: 100%;
   border-collapse: collapse;
 }
 
