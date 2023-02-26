@@ -89,7 +89,7 @@
   <body>
     <header>
       <div class="logo"><h2>LOGO</h2></div>
-      <button id="open-nav">
+      <button type="button" id="open-nav">
         <i class="fas fa-bars"></i>
       </button>
       <nav>
@@ -105,15 +105,20 @@
         </div>
       </nav>
       <div class="header-buttons">
-        <button><i class="far fa-user"></i></button>
-        <button><i class="far fa-heart"></i></button>
-        <button>
+        <button type="button">
+          <i class="far fa-user"></i>
+        </button>
+        <button type="button">
+          <i class="far fa-heart"></i>
+        </button>
+        <button type="button">
           <i class="fas fa-shopping-cart"></i>
         </button>
       </div>
     </header>
     <main>
       <section id="routing-tree">
+        <h2 class="sr-only">Home, Products, Bikes ></h2>
         <small>Home > Products > Bikes ></small>
       </section>
 
@@ -136,12 +141,13 @@
       </section>
 
       <section id="product-wrapper">
+        <h2 class="sr-only">Product section</h2>
         <div class="product-slider">
           <div class="product-slider-buttons">
-            <button>
+            <button type="button">
               <i class="fas fa-chevron-left"></i>
             </button>
-            <button>
+            <button type="button">
               <i class="fas fa-chevron-right"></i>
             </button>
           </div>
@@ -250,6 +256,7 @@
                 Add to cart
               </button>
               <button
+                type="button"
                 class="big-button color-button-inverse"
               >
                 Contact us
@@ -260,6 +267,7 @@
       </section>
 
       <section id="product-description-links">
+        <h2 class="sr-only">Description links section</h2>
         <a href="#product-description">Description</a>
         <a href="#product-specifications">Specifications</a>
         <a href="#">Reviews (7)</a>
@@ -268,6 +276,7 @@
       <hr />
 
       <section id="product-description">
+        <h2 class="sr-only">Description section</h2>
         <div class="description">
           <h2>Product description</h2>
           <p>
@@ -285,7 +294,10 @@
             sit voluptatem accusantium doloremque
             laudantium.
           </p>
-          <button class="big-button color-button-alt">
+          <button
+            type="button"
+            class="big-button color-button-alt"
+          >
             More info
           </button>
         </div>
