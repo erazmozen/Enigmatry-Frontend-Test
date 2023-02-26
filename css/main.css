@@ -28,21 +28,31 @@
 }
 
 html {
+  position: relative;
+  width: 100%;
   background-color: black;
   color: #222;
   box-sizing: border-box;
 }
 
 body {
+  position: relative;
+  width: 100%;
   background-color: white;
-  max-width: 1440px;
-  min-width: 375px;
+
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   padding-bottom: 2rem;
+}
+
+main {
+  position: relative;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
 }
 
 /*
