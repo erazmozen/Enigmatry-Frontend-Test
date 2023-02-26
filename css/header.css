@@ -4,8 +4,8 @@ header {
   position: relative;
   height: 78px;
   padding: 0 var(--content-spaceing);
-  background-color: #fe5e41;
-  color: white;
+  background-color: var(--color-orange);
+  color: var(--color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,27 +17,14 @@ header {
   }
 }
 
-header h2 {
-  margin: 0;
-}
-
-header a {
-  color: white;
-}
-
 header input {
   height: 56px;
   border: none;
   padding: 0 16px;
-}
-
-header button {
-  position: relative;
-  color: white;
+  font-size: 16px;
 }
 
 nav {
-  margin-left: 220px;
   display: none;
 }
 
@@ -49,10 +36,42 @@ nav {
 }
 
 nav a {
-  margin: 0 var(--content-spaceing);
+  color: white;
+  margin: 0 calc(var(--content-spaceing) * 0.4);
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 1250px) {
+  nav a {
+    margin: 0 var(--content-spaceing);
+  }
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+#open-nav {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  #open-nav {
+    display: none;
+  }
+}
+
+.logo {
+  position: relative;
+  margin: 0 20px 0 30px;
+  font-size: 28px;
+}
+
+.logo h2 {
+  margin: 0;
 }
 
 .nav-links,
@@ -62,20 +81,44 @@ nav a {
   align-items: center;
 }
 
+.nav-input input {
+  display: none;
+}
+
+@media only screen and (min-width: 1250px) {
+  .nav-input input {
+    display: inline;
+  }
+}
+
 .nav-input i {
-  position: absolute;
-  right: 15px;
-  font-size: 20px;
-  color: black;
+  margin-left: 12px;
+  position: relative;
+  color: white;
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 1250px) {
+  .nav-input i {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    color: black;
+  }
 }
 
 .header-buttons {
   white-space: nowrap;
 }
 
+.header-buttons button {
+  position: relative;
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
   .header-buttons {
-    margin-right: 70px;
+    margin: 0 70px 0 35px;
   }
 }
 
@@ -92,27 +135,4 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.logo {
-  position: absolute;
-  top: 26px;
-  left: 73px;
-  font-size: 28px;
-}
-
-@media only screen and (min-width: 768px) {
-  .logo {
-    top: 46px;
-  }
-}
-
-#open-nav {
-  display: block;
-}
-
-@media only screen and (min-width: 768px) {
-  #open-nav {
-    display: none;
-  }
 }
