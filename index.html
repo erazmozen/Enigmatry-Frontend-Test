@@ -132,7 +132,11 @@
     <main>
       <div class="lightbox close-lightbox">
         <div>
-          <button type="button" id="lightbox-close-button">
+          <button
+            type="button"
+            id="lightbox-close-button"
+            onclick="toggleLightbox()"
+          >
             <i
               title="close-lightbox"
               class="fas fa-times"
@@ -329,6 +333,7 @@
               <button
                 type="button"
                 class="big-button color-button-inverse"
+                onclick="toggleLightbox()"
               >
                 Contact us
               </button>
