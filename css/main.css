@@ -49,7 +49,6 @@ body {
 }
 
 main {
-  position: relative;
   max-width: 1440px;
   min-width: 375px;
   margin: 0 auto;
