@@ -374,21 +374,23 @@ section a {
 /* Table */
 
 .tg {
+  width: 100%;
   border-collapse: collapse;
+  font-size: 14px;
 }
 
 .tg td {
-  font-size: 14px;
   overflow: hidden;
   white-space: nowrap;
   padding: 0.2rem;
 }
 
-tr:nth-child(even) {
-  background: var(--color-light-grey);
+tr:nth-child(odd) {
+  background: var(--color-white);
 }
 
 .tg th {
+  background-color: var(--color-light-grey);
   color: var(--color-orange);
   font-size: 14px;
   overflow: hidden;
@@ -398,5 +400,6 @@ tr:nth-child(even) {
 
 .tg .tg-0lax {
   text-align: left;
-  vertical-align: top;
+  vertical-align: center;
+  padding: 7px 20px;
 }
