@@ -7,7 +7,6 @@
 }
 
 .card p {
-  margin: 0;
   margin-bottom: var(--content-spaceing);
 }
 
@@ -93,6 +92,13 @@
 
 /* General selectors */
 
+main h1,
+main h2,
+main p {
+  margin: 0;
+  padding: 0;
+}
+
 main h1 {
   font-family: "Poppins";
   font-style: normal;
@@ -101,18 +107,12 @@ main h1 {
   line-height: var(--h1-line-height);
 }
 
-section p,
-section h2 {
-  margin: var(--content-spaceing);
-}
-
 section h2 {
   line-height: var(--h2-line-height);
 }
 
 section p {
   line-height: var(--p-line-height);
-  max-width: 488px;
 }
 
 section a {
@@ -123,8 +123,7 @@ section a {
 /* Routing tree */
 
 #routing-tree {
-  margin-left: var(--content-spaceing);
-  margin-top: 40px;
+  margin: var(--content-spaceing);
 }
 
 #routing-tree > small {
@@ -133,23 +132,24 @@ section a {
 
 @media only screen and (min-width: 768px) {
   #routing-tree {
-    margin-left: var(--content-spaceing-desktop);
+    margin: var(--content-spaceing)
+      var(--content-spaceing-desktop);
   }
 }
 
 /* Product header */
 
 #product-header {
-  position: relative;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin: 0 var(--content-spaceing);
+  margin: var(--content-spaceing);
 }
 
 @media only screen and (min-width: 768px) {
   #product-header {
-    margin: 0 var(--content-spaceing-desktop);
+    margin: var(--content-spaceing)
+      var(--content-spaceing-desktop);
   }
 }
 
@@ -159,21 +159,28 @@ section a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 var(--content-spaceing);
 }
 
 @media only screen and (min-width: 768px) {
   #product-wrapper {
-    margin: 0 var(--content-spaceing-desktop);
+    margin: var(--content-spaceing)
+      var(--content-spaceing-desktop);
+  }
+}
+
+@media only screen and (min-width: 1432px) {
+  #product-wrapper {
+    justify-content: space-between;
   }
 }
 
 .product-slider {
   position: relative;
+  max-width: 696px;
 }
 
-.product-slider {
-  max-width: 696px;
+.product-slider img {
+  width: 100%;
 }
 
 .product-slider-buttons {
@@ -187,7 +194,7 @@ section a {
 }
 
 .product-slider-buttons > button {
-  margin: 0 15px;
+  margin: 0 10px;
   height: 48px;
   width: 48px;
   background-color: var(--color-light-grey);
@@ -259,19 +266,20 @@ section a {
 /* Product description links */
 
 #product-description-links {
-  margin: 0 var(--content-spaceing);
+  margin: var(--content-spaceing);
 }
 
 @media only screen and (min-width: 768px) {
   #product-description-links {
-    margin: 0 var(--content-spaceing-desktop);
+    margin: var(--content-spaceing)
+      var(--content-spaceing-desktop);
   }
 }
 
 /* Product Description */
 
 #product-description {
-  margin: 0 var(--content-spaceing);
+  margin: var(--content-spaceing);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -279,52 +287,70 @@ section a {
 
 @media only screen and (min-width: 768px) {
   #product-description {
-    margin: 0 var(--content-spaceing-desktop);
+    margin: var(--content-spaceing)
+      var(--content-spaceing-desktop);
   }
 }
 
-#product-description > img {
-  order: 2;
-}
-
-@media only screen and (max-width: 768px) {
-  #product-description > img {
-    order: 1;
-  }
-}
-
-#product-description > div {
-  order: 1;
-}
-
-@media only screen and (max-width: 768px) {
-  #product-description > div {
-    order: 2;
+@media only screen and (min-width: 1432px) {
+  #product-description {
+    justify-content: space-between;
   }
 }
 
 #product-description button {
-  margin-left: var(--content-spaceing);
+  margin-top: var(--content-spaceing);
 }
 
-img[alt="img2"] {
-  object-fit: cover;
-  object-position: 0px -100px;
-  max-width: 592px;
+#product-description img {
+  max-width: 100%;
+  align-self: center;
+}
+
+.description {
+  width: 100%;
+  margin: var(--content-spaceing) 0;
+  order: 2;
+}
+
+@media only screen and (min-width: 768px) {
+  .description {
+    margin: 0 0 var(--content-spaceing) 0;
+    max-width: 604px;
+    order: 1;
+  }
+}
+
+.description p {
+  max-width: 488px;
+}
+
+.description-image-wrapper {
   height: 444px;
-  margin-left: 80px;
+  display: flex;
+  order: 1;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .description-image-wrapper {
+    height: 444px;
+    max-width: 604px;
+    order: 2;
+  }
 }
 
 /* Product Specifications */
 
 #product-specifications {
   background-color: var(--color-light-grey);
-  padding: 0 var(--content-spaceing);
+  padding: var(--content-spaceing) var(--content-spaceing);
 }
 
 @media only screen and (min-width: 768px) {
   #product-specifications {
-    padding: 0 var(--content-spaceing-desktop);
+    padding: var(--content-spaceing)
+      var(--content-spaceing-desktop);
   }
 }
 
