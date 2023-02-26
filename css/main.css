@@ -24,6 +24,7 @@
   --h2-line-height: 36px;
   --p-line-height: 24px;
   --content-spaceing: 24px;
+  --content-spaceing-desktop: 112px;
 }
 
 html {
@@ -41,6 +42,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  padding-bottom: 2rem;
 }
 
 /*
