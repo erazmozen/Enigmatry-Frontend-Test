@@ -39,7 +39,6 @@ body {
   position: relative;
   width: 100%;
   background-color: white;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -52,6 +51,7 @@ main {
   max-width: 1440px;
   min-width: 375px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /*
@@ -206,6 +206,10 @@ textarea {
   clear: both;
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -296,12 +300,6 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-}
-
-/* temp classes */
-
-img {
-  width: 100%;
 }
 
 button {
