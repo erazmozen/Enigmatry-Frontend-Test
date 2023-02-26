@@ -11,6 +11,12 @@ header {
   align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  header {
+    height: 120px;
+  }
+}
+
 header h2 {
   margin: 0;
 }
@@ -20,14 +26,57 @@ header a {
 }
 
 header input {
-  padding: 0.3rem 0.5rem;
-  padding-top: 0.7rem;
+  height: 56px;
   border: none;
+  padding: 0 16px;
 }
 
 header button {
   position: relative;
   color: white;
+}
+
+nav {
+  margin-left: 220px;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    white-space: nowrap;
+  }
+}
+
+nav a {
+  margin: 0 var(--content-spaceing);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.nav-links,
+.nav-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-input i {
+  position: absolute;
+  right: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+.header-buttons {
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-buttons {
+    margin-right: 70px;
+  }
 }
 
 .header-buttons button:last-child:after {
@@ -52,16 +101,18 @@ header button {
   font-size: 28px;
 }
 
-#open-nav {
-  display: none;
+@media only screen and (min-width: 768px) {
+  .logo {
+    top: 46px;
+  }
 }
 
-@media only screen and (max-width: 600px) {
-  nav {
-    display: none;
-  }
+#open-nav {
+  display: block;
+}
 
+@media only screen and (min-width: 768px) {
   #open-nav {
-    display: block;
+    display: none;
   }
 }
