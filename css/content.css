@@ -81,7 +81,7 @@ section a {
   font-size: 16px;
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 768px) {
   #routing-tree {
     margin-left: var(--content-spaceing-desktop);
   }
@@ -97,7 +97,7 @@ section a {
   margin: 0 var(--content-spaceing);
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 768px) {
   #product-header {
     margin: 0 var(--content-spaceing-desktop);
   }
@@ -107,13 +107,12 @@ section a {
 
 #product-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-grow: 0;
   margin: 0 var(--content-spaceing);
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 768px) {
   #product-wrapper {
     margin: 0 var(--content-spaceing-desktop);
   }
@@ -213,7 +212,7 @@ section a {
   margin: 0 var(--content-spaceing);
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 768px) {
   #product-description-links {
     margin: 0 var(--content-spaceing-desktop);
   }
@@ -224,11 +223,11 @@ section a {
 #product-description {
   margin: 0 var(--content-spaceing);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 768px) {
   #product-description {
     margin: 0 var(--content-spaceing-desktop);
   }
@@ -238,7 +237,7 @@ section a {
   order: 2;
 }
 
-@media only screen and (max-width: 1127px) {
+@media only screen and (max-width: 768px) {
   #product-description > img {
     order: 1;
   }
@@ -248,7 +247,7 @@ section a {
   order: 1;
 }
 
-@media only screen and (max-width: 1127px) {
+@media only screen and (max-width: 768px) {
   #product-description > div {
     order: 2;
   }
@@ -263,6 +262,7 @@ img[alt="img2"] {
   object-position: 0px -100px;
   max-width: 592px;
   height: 444px;
+  margin-left: 80px;
 }
 
 /* Product Specifications */
@@ -272,7 +272,7 @@ img[alt="img2"] {
   padding: 0 var(--content-spaceing);
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 768px) {
   #product-specifications {
     padding: 0 var(--content-spaceing-desktop);
   }
