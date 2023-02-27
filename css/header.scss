@@ -37,3 +37,36 @@ header {
     /* display: none; */
   }
 }
+
+nav {
+  display: none;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    position: relative;
+    color: var(--color-white);
+    margin: 0 calc(var(--content-spaceing) * 0.4);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  nav {
+    a {
+      margin: 0 var(--content-spaceing);
+    }
+  }
+}
