@@ -91,7 +91,7 @@
 }
 
 .active {
-  color: black;
+  color: var(--color-semi-black);
 }
 
 .active::after {
@@ -101,7 +101,7 @@
   left: 0;
   width: 100%;
   height: 5px;
-  background-color: black;
+  background-color: var(--color-semi-black);
 }
 
 /* General selectors */

@@ -42,7 +42,7 @@ nav ul {
 
 nav a {
   position: relative;
-  color: white;
+  color: var(--color-white);
   margin: 0 calc(var(--content-spaceing) * 0.4);
   font-size: 18px;
   line-height: 24px;
@@ -61,7 +61,7 @@ nav a {
 }
 
 #open-nav {
-  color: white;
+  color: var(--color-white);
 }
 
 @media only screen and (min-width: 768px) {
@@ -101,7 +101,7 @@ nav a {
 .nav-input i {
   margin-left: 12px;
   position: relative;
-  color: white;
+  color: var(--color-white);
   font-size: 24px;
 }
 
@@ -110,7 +110,7 @@ nav a {
     position: absolute;
     right: 15px;
     font-size: 20px;
-    color: black;
+    color: var(--color-semi-black);
   }
 }
 
@@ -120,7 +120,7 @@ nav a {
 
 .header-buttons button {
   position: relative;
-  color: white;
+  color: var(--color-white);
 }
 
 @media only screen and (min-width: 768px) {
