@@ -7,3 +7,8 @@ function toggleLightbox() {
   toggleClass(".lightbox", "close-lightbox");
   toggleClass("body", "stop-scroll");
 }
+
+function fakeLinkToggle(id) {
+  const e = document.getElementById(id);
+  e.classList.toggle("active");
+}
