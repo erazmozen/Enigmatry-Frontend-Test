@@ -310,6 +310,7 @@ section a {
 /* Product Description */
 
 #product-description {
+  padding: var(--content-spaceing) 0;
   margin: var(--content-spaceing);
   display: flex;
   justify-content: center;
@@ -383,6 +384,10 @@ section a {
     padding: var(--content-spaceing)
       var(--content-spaceing-desktop);
   }
+}
+
+#product-specifications h2 {
+  padding: var(--content-spaceing) 0;
 }
 
 /* Table */
