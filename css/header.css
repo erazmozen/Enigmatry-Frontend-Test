@@ -32,7 +32,7 @@ header input {
 
 @media only screen and (min-width: 768px) {
   #open-nav {
-    /* display: none; */
+    display: none;
   }
 }
 nav {
