@@ -277,3 +277,16 @@ section {
     vertical-align: middle;
   }
 }
+
+/* Product description links */
+
+#product-description-links {
+  margin: var(--content-spaceing);
+}
+
+@media only screen and (min-width: 768px) {
+  #product-description-links {
+    margin: var(--content-spaceing)
+      var(--content-spaceing-desktop);
+  }
+}
