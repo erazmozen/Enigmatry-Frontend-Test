@@ -146,5 +146,17 @@ nav a {
     margin: 0 70px 0 35px;
   }
 }
+.active {
+  color: var(--color-semi-black);
+}
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -3.1rem;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-semi-black);
+}
 
 /*# sourceMappingURL=header.css.map */
