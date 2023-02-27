@@ -8,6 +8,11 @@ function toggleLightbox() {
   toggleClass("body", "stop-scroll");
 }
 
+function submitContact() {
+  alert("Your message was sent. Thanks for contacting us!");
+  toggleLightbox();
+}
+
 function fakeLinkToggle(id) {
   const e = document.getElementById(id);
   e.classList.toggle("active");
