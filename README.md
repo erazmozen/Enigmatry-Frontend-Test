@@ -10,11 +10,11 @@ Operating system: [Arch linux](https://archlinux.org/)
 Development server: [Live Server](https://www.npmjs.com/package/live-server)  
 Editor: [lunarVim](https://www.lunarvim.org/)
 
-## Tools / Helpers
+## Tools / Helpers:
 
 Boilerplate: [HTML5 Boilerplate](https://html5boilerplate.com/)  
 Formatter: [Prettier](https://prettier.io/)
 
-## Design guidelines
+## Design guidelines:
 
 [Figma design](https://www.figma.com/file/cD2GQaol0OJ414fVMUmWAQ/Enigmatry-Frontend-Test-For-Candidate?node-id=2%3A2&t=yT4rxstvjVXUZfMz-1)
