@@ -92,4 +92,59 @@ nav a {
   font-size: 24px;
 }
 
+.header-buttons {
+  white-space: nowrap;
+}
+.header-buttons button {
+  position: relative;
+  color: var(--color-white);
+}
+.header-buttons button:last-child:after {
+  content: "1";
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  background-color: var(--color-green);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-buttons {
+    margin: 0 70px 0 35px;
+  }
+}
+.header-buttons {
+  white-space: nowrap;
+}
+.header-buttons button {
+  position: relative;
+  color: var(--color-white);
+}
+.header-buttons button:last-child:after {
+  content: "1";
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  background-color: var(--color-green);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-buttons {
+    margin: 0 70px 0 35px;
+  }
+}
+
 /*# sourceMappingURL=header.css.map */
