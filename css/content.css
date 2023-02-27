@@ -1,9 +1,16 @@
 /* Common classes */
 
 .card {
-  max-width: 464px;
+  margin: 0 var(--content-spaceing);
   padding: var(--content-spaceing);
   background-color: var(--color-light-grey);
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: 0;
+    max-width: 464px;
+  }
 }
 
 .card p {
@@ -177,6 +184,18 @@ section a {
   margin: var(--content-spaceing);
 }
 
+.product-header-buttons {
+  margin: 0 0 7px 8px;
+  white-space: nowrap;
+  align-self: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .product-header-buttons {
+    align-self: initial;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #product-header {
     margin: var(--content-spaceing)
@@ -236,6 +255,14 @@ section a {
 
 .select-wrapper {
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .select-wrapper {
+    justify-content: space-between;
+  }
 }
 
 .select-group {
@@ -243,20 +270,24 @@ section a {
   display: flex;
   flex-flow: column nowrap;
   height: 56px;
-  max-width: 288px;
-  justify-items: center;
+  width: 100%;
   background: #fff;
   font-size: 12px;
-  padding-right: 1px;
-  box-sizing: border-box;
   padding-right: 34px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
-  margin: 24px 0;
+  margin: 12px 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  .select-group {
+    max-width: 220px;
+  }
 }
 
 .select-group > select {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   z-index: 2;
   width: 100%;
@@ -273,7 +304,7 @@ section a {
 
 .select-group > label {
   font-size: 11px;
-  padding: 0px 20px 4px 20px;
+  padding: 4px 20px 4px 20px;
 }
 
 /* Checkbox */
@@ -377,6 +408,7 @@ section a {
 #product-specifications {
   background-color: var(--color-light-grey);
   padding: var(--content-spaceing) var(--content-spaceing);
+  overflow-x: scroll;
 }
 
 @media only screen and (min-width: 768px) {
@@ -393,13 +425,13 @@ section a {
 /* Table */
 
 .tg {
+  margin-bottom: 2rem;
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
 }
 
 .tg td {
-  overflow: hidden;
   white-space: nowrap;
   padding: 0.2rem;
 }
