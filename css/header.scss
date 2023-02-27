@@ -70,3 +70,36 @@ nav {
     }
   }
 }
+
+.logo {
+  position: relative;
+  margin: 0 20px 0 30px;
+  font-size: 28px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.nav-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input {
+    display: none;
+  }
+
+  i {
+    margin-left: 12px;
+    position: relative;
+    color: var(--color-white);
+    font-size: 24px;
+  }
+}
