@@ -72,4 +72,32 @@ section a {
   color: var(--color-orange);
 }
 
+/* Routing tree */
+#routing-tree {
+  margin: var(--content-spaceing);
+}
+#routing-tree ul {
+  margin-top: 40px;
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+}
+#routing-tree ul li {
+  display: inline;
+}
+#routing-tree ul li + li:before {
+  padding: 10px;
+  content: ">";
+}
+#routing-tree ul li a {
+  margin: 0;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #routing-tree {
+    margin: var(--content-spaceing) var(--content-spaceing-desktop);
+  }
+}
+
 /*# sourceMappingURL=content.css.map */
