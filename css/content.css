@@ -77,20 +77,6 @@ section a {
   color: var(--color-orange);
 }
 
-.active {
-  color: var(--color-semi-black);
-}
-
-.active::after {
-  content: "";
-  position: absolute;
-  bottom: -3.1rem;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background-color: var(--color-semi-black);
-}
-
 /* Routing tree */
 
 #routing-tree {
