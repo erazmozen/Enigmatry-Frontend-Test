@@ -99,5 +99,29 @@ section a {
     margin: var(--content-spaceing) var(--content-spaceing-desktop);
   }
 }
+/* Product header */
+#product-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: var(--content-spaceing);
+}
+
+@media only screen and (min-width: 768px) {
+  #product-header {
+    margin: var(--content-spaceing) var(--content-spaceing-desktop);
+  }
+}
+.product-header-buttons {
+  margin: 0 0 7px 8px;
+  white-space: nowrap;
+  align-self: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .product-header-buttons {
+    align-self: initial;
+  }
+}
 
 /*# sourceMappingURL=content.css.map */
