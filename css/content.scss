@@ -355,3 +355,57 @@ section {
     order: 2;
   }
 }
+
+/* Product Specifications */
+
+#product-specifications {
+  background-color: var(--color-light-grey);
+  padding: var(--content-spaceing) var(--content-spaceing);
+  overflow-x: scroll;
+
+  h2 {
+    padding: var(--content-spaceing) 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #product-specifications {
+    padding: var(--content-spaceing)
+      var(--content-spaceing-desktop);
+  }
+}
+
+/* Table */
+
+.tg {
+  margin-bottom: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+
+  td {
+    white-space: nowrap;
+    padding: 0.2rem;
+  }
+
+  th {
+    background-color: var(--color-light-grey);
+    color: var(--color-orange);
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.2rem;
+  }
+
+  .tg-0lax {
+    text-align: left;
+    vertical-align: center;
+    padding: 7px 20px;
+  }
+}
+
+tr {
+  &:nth-child(odd) {
+    background: var(--color-white);
+  }
+}
