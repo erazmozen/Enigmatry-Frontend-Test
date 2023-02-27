@@ -21,5 +21,19 @@ header input {
     height: 120px;
   }
 }
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+#open-nav {
+  color: var(--color-white);
+}
+
+@media only screen and (min-width: 768px) {
+  #open-nav {
+    /* display: none; */
+  }
+}
 
 /*# sourceMappingURL=header.css.map */
