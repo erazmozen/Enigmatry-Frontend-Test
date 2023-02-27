@@ -92,6 +92,18 @@ nav a {
   font-size: 24px;
 }
 
+@media only screen and (min-width: 1250px) {
+  .nav-input input {
+    display: inline;
+    margin-left: var(--content-spaceing);
+  }
+  .nav-input i {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    color: var(--color-semi-black);
+  }
+}
 .header-buttons {
   white-space: nowrap;
 }
