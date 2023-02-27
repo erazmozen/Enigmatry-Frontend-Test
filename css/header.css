@@ -1,3 +1,25 @@
+/* Header */
+header {
+  position: relative;
+  height: 78px;
+  padding: 0 var(--content-spaceing);
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header input {
+  height: 56px;
+  border: none;
+  padding: 0 16px;
+  font-size: 16px;
+}
 
+@media only screen and (min-width: 768px) {
+  header {
+    height: 120px;
+  }
+}
 
 /*# sourceMappingURL=header.css.map */
