@@ -1,3 +1,31 @@
+/* General selectors */
+main h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: var(--h1-line-height);
+}
+main h2 {
+  margin: 0;
+  padding: 0;
+}
+main p {
+  margin: 0;
+  padding: 0;
+}
 
+section h2 {
+  line-height: var(--h2-line-height);
+}
+section p {
+  line-height: var(--p-line-height);
+}
+section a {
+  font-weight: 600;
+  margin-left: var(--content-spaceing);
+}
 
 /*# sourceMappingURL=content.css.map */
