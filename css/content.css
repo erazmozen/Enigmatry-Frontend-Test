@@ -28,4 +28,24 @@ section a {
   margin-left: var(--content-spaceing);
 }
 
+/* Common classes */
+.card {
+  margin: 0 var(--content-spaceing);
+  padding: var(--content-spaceing);
+  background-color: var(--color-light-grey);
+}
+.card p {
+  margin-bottom: var(--content-spaceing);
+}
+.card strong:last-child {
+  color: var(--color-orange);
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: 0;
+    max-width: 464px;
+  }
+}
+
 /*# sourceMappingURL=content.css.map */
