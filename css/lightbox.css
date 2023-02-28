@@ -15,6 +15,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: var(--color-white);
   padding: 14px;
   width: 480px;
@@ -24,6 +25,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .lightbox input {
   padding: 1rem;
@@ -31,11 +33,25 @@
   margin-bottom: 0.6rem;
   background-color: var(--color-light-grey);
 }
+.lightbox textarea {
+  padding: 1rem;
+  border: none;
+  margin-bottom: 0.6rem;
+  background-color: var(--color-light-grey);
+  resize: none;
+  height: 200px;
+}
 
 #lightbox-close-button {
   position: absolute;
   right: 14px;
   top: 14px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .lightbox-button-wrapper {
