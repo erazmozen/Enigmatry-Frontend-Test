@@ -26,18 +26,35 @@
   top: 14px;
 }
 
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .lightbox > div {
+  position: relative;
   background-color: var(--color-white);
   padding: 14px;
   width: 480px;
   height: 412px;
 }
 
-.lightbox input {
+.lightbox form {
+  height: 100%;
+}
+
+.lightbox input,
+.lightbox textarea {
   padding: 1rem;
   border: none;
   margin-bottom: 0.6rem;
   background-color: var(--color-light-grey);
+}
+
+.lightbox textarea {
+  resize: none;
+  height: 200px;
 }
 
 .lightbox-button-wrapper {
